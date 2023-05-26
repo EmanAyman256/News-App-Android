@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    tools:context=".GithubAuth">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/git"
+        tools:ignore="MissingConstraints"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="182dp" />
+    <EditText
+
+        android:id="@+id/Gitlogin_email"
+        android:layout_width="400dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/customedit"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="8dp"
+        android:hint="Email"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteX="23dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/GitloginBtn"
+        android:layout_width="400dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/lavender"
+        android:text="Github Login"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/Gitlogin_email"
+        tools:layout_editor_absoluteX="23dp"
+        tools:ignore="MissingConstraints" />
+
+</LinearLayout>
+
